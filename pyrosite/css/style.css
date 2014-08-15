@@ -2,39 +2,44 @@ body {
     font-family: Oxygen Mono;
     font-size: 25px;
     word-spacing: 1px;
+    background-color: rgb(207,207,207);
+}
+.filter a:hover{
 
 }
-
 .filter a {  
-	color:red;
+	color:black;
 	text-decoration:none;
+    text-align: center;
+    font-size: 32px;
 }
 
 .filter a.current { 
-    font-weight:bold;
-}
-
-img {
-    margin:5px;
-}
-
-.1 {
-    word-spacing: 0px;
-}
-
-a {
-    border-right: 1px solid black;
-    width: 2px;
+    color:red;
+    font-size: 45px
 }
 
 .filter {
-    width:auto;
+    padding-top: 250px;
+    text-align: center;
+
 }
 
-.current {
-    border-left:1px solid black;
+.container {
+    padding-left: 83.5px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: scroll;
+
+
 }
 
+.img {
+    margin: 6px;
+}
 .isotope-item {
     z-index: 2;
 }
