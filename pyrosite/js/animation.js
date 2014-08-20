@@ -1,5 +1,5 @@
 $(window).load(function(){
-    var $container = $('.container');
+    var $container = $('.isotope-container .reviewwrapper');
     $container.isotope({
         filter: '*',
         animationOptions: {
@@ -8,11 +8,11 @@ $(window).load(function(){
             queue: false
         }
     });
- 
+
     $('.filter a').click(function(){
         $('.filter .current').removeClass('current');
         $(this).addClass('current');
- 
+
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
@@ -23,5 +23,5 @@ $(window).load(function(){
             }
          });
          return false;
-    }); 
+    });
 });
